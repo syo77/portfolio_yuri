@@ -23,7 +23,7 @@ body {
     width: 100%;
     max-height: 6rem;
     min-height: 4rem;
-    padding: 0rem 18.75rem;
+    padding: 0rem 15.7%;
     background: #1a1d21;
     border-bottom: 3px solid gray;
     position: fixed;
@@ -164,7 +164,7 @@ main article ul {
 
 .abertura .apresentacao {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     width: 100%;
     padding: 0;
     /* border: 3px solid red; */
@@ -319,7 +319,7 @@ footer img {
 
 @media (min-width:361px) and (max-width: 432px) {
     main article ul {
-        font-size: 0.923rem;
+        font-size: 0.83rem;
         width: 80%;
         /* border: 1px solid salmon; */
     }
