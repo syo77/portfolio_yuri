@@ -1,3 +1,3 @@
 # Meu portfólio
 
-## Aqui descrevi um pouco dos meus conhecimentos e experiências
+## Aqui eu descrevi um pouco dos meus conhecimentos e experiências
