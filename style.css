@@ -251,7 +251,52 @@ footer img {
     width: 2.5rem;
 }
 
-@media(max-width: 360px) {
+@media (max-width: 287px) {
+    .header-nav {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .abertura .foto_principal img {
+        width: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .git img {
+        margin: 0rem 0.2rem;
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    
+    .git p {
+        margin: 0rem 0.2rem;
+    }
+
+    main article ul {
+        font-size: 0.8rem;
+        width: 80%;
+        /* border: 1px solid salmon; */
+    }
+
+    .abertura {
+        padding: 3rem 7%;
+        /* border: 3px solid lightgreen; */
+    }
+
+    .servicos {
+        padding: 3rem 7%;
+        /* border: 3px solid green; */
+    }
+
+
+
+}
+
+@media (min-width: 288px) and (max-width: 360px) {
     nav a {
         margin: 0;
     }
