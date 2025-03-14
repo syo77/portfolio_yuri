@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuri Silva</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="home_subir"></div>
+    <header class="header-nav">
+      <div class="github">
+        <a href="https://github.com/syo77" target="_blank">
+          <div class="git">
+            <p>github</p>
+            <img src="img/github.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home_subir" class="scroll-suave">home</a></li>
+          <li><a href="#sobre_subir" class="scroll-suave">sobre</a></li>
+          <li><a href="footer" class="scroll-suave">contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="idabertura" class="abertura">
+        <div id="sobre_subir"></div>
+        <div class="foto_principal"><img src="img/foto-preta.png" alt=""></div>
+        <div class="apresentacao">
+        <article class="sobre">
+        <h1>Sobre mim</h1>
+        <ul>
+          <li>
+            <p>
+              Meu nome é Yuri, sou um jovem de 19 anos atualmente. E tenho o
+              objetivo de me tornar um programador web <em>full stack</em>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Cursei meu ensino fundamental e médio no Colégio Militar de Brasília (CMB), onde tive excelentes experiências.
+              Estou bacharelando no curso de Ciência da Computação no Instituto de Educação Superior de Brasília (IESB).
+              Atualmente estou no terceiro semestre.</p>
+          </li>
+          <li>
+            <p>
+              Sou um jovem muito descontraído, gosto de fazer amigos e me
+              relaciono muito bem com todos. Sou muito focado nos meus objetivos e gosto de desafios.<br>
+            </p>
+          </li>
+        </ul>
+        </article>
+        <article class="foto">
+          <h2>Linguagens</h2>
+          <div class="prog-img">
+            <img src="img/html-5.png" alt="" />
+            <img src="img/css-3.png" alt="" />
+            <img src="img/prog-js.png" alt="" />
+            <img src="img/prog-c.png" alt="" />
+            <img src="img/assembly-icon.png" alt="" />
+            <img src="img/python-icon.png" alt="" />
+            <img src="img/php-icon.png" alt="" />
+            <!-- <img src="https://skillicons.dev/icons?i=c,py,php,html,css,js" alt=""> -->
+           </div>
+          <ul>
+            <li>
+              <p>
+                Na faculdade eu aprendi linguagem C e a linguagem Assembly. Em linguagem C, eu aprendi sobre funções, como manipular a memória, memória dinâmica, entre outros conceitos. Em Assembly eu aprendi a sintaxe básica e funções básicas.
+              </p>
+            </li>
+            <li>
+              <p>
+                Realizei cursos no Instituto Federal do Rio Grande do Sul, onde aprendi HTML, CSS e JavaScript. Nesses cursos eu aprendi tudo sobre HTML e CSS, aprendi a sintaxe básica de JS e o início da manipulação do DOM.
+              </p>
+            </li>
+            <li>
+              <p>
+                Realizei um curso de Python na renomada plataforma Santander Open Academy, onde dominei a linguagem completamente. Aprendi sobre tratamento de dados, tratamento de exceções, módulos e pacotes, entre outros conceitos.
+              </p>
+            </li>
+            <li>
+              <p>
+                Realizei um curso no YouTube de PHP, que me ajudou a aprender a sintaxe básica da linguagem. Nesse curso aprendi como gerar HTML a partir do PHP, aprendi as operações básicas, extração de dados de um formulário com métodos POST e GET, entre outros diversos conceitos.
+              </p>
+            </li>
+          </ul>
+        </article>
+      </div>
+      </section>
+      <section class="servicos">
+        <article class="desc_serv">
+          <h2>Serviços</h2>
+          <ul style="list-style: disc;">
+            <li>
+              <p>
+                Programação de sites responsivos e landing pages
+              </p>
+            </li>
+            <li>
+              <p>
+                Criação de Designs utilizando Canva
+              </p>
+            </li>
+            <li>
+              <p>
+                Criação de programas em Python
+              </p>
+            </li>
+            <li>
+              <p>
+                Criação de programas em PHP
+              </p>
+            </li>
+            <li>
+              <p>
+                Manutenção de sites
+              </p>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <article>
+        <div>
+          <a href="https://github.com/syo77"><img src="img/github.png" alt="">&nbsp;GitHub: <span>syo77</span></a>
+        </div>
+        <div>
+          <a href="mailto:yuripb902@gmail.com"><img src="img/envelope.png" alt="">&nbsp;E-mail: <span>yuripb902@gmail.com</span></a>
+        </div>
+      </article>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        if (typeof $ !== "undefined") {
+          $("a.scroll-suave").on("click", function (e) {
+            e.preventDefault();
+            let id = $(this).attr("href");
+            if ($(id).length) {
+              $("html, body").animate(
+                {
+                  scrollTop: $(id).offset().top,
+                },
+                1000
+              );
+            }
+          });
+        } else {
+          console.error("jQuery não está carregado.");
+        }
+      });
+    </script>    
+  </body>
+</html>
