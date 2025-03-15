@@ -292,11 +292,14 @@ footer img {
         /* border: 3px solid green; */
     }
 
-
-
 }
 
 @media (min-width: 288px) and (max-width: 360px) {
+    .header-nav {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
     nav a {
         margin: 0;
     }
@@ -310,55 +313,22 @@ footer img {
     }
 
     main article ul {
-        font-size: 0.863rem;
+        font-size: 0.638rem;
         width: 80%;
         /* border: 1px solid salmon; */
-    }
-
-}
-
-@media (min-width:361px) and (max-width: 432px) {
-    main article ul {
-        font-size: 0.83rem;
-        width: 80%;
-        /* border: 1px solid salmon; */
-    }
-
-}
-
-@media(max-width: 432px) {
-    .header-nav {
-        padding: 0;
-    }
-
-    .git img {
-        margin: 0rem 0.2rem;
-    }
-
-    .git p {
-        margin: 0rem 0.3rem;
-    }
-
-    .abertura .foto_principal img {
-        max-width: 12rem;
-        margin-bottom: 2rem;
-    }
-
-    main article {
-        padding: 1rem 0rem;
     }
 
     main article h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
-    .abertura {
-        padding: 3rem 7%;
-        /* border: 3px solid lightgreen; */
+    .abertura .foto_principal img {
+        width: 10rem;
+        margin-bottom: 2rem;
     }
 
     .sobre h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         /* border: 1px solid yellow; */
     }
 
@@ -372,6 +342,69 @@ footer img {
         width: 12%;
         margin: 0 -3px -7px -3px;
         /* border: 1px solid red; */
+    }
+
+}
+
+@media (min-width:361px) and (max-width: 432px) {
+    main article ul {
+        font-size: 0.744rem;
+        width: 80%;
+        /* border: 1px solid salmon; */
+    }
+
+    .abertura .foto_principal img {
+        max-width: 11rem;
+        margin-bottom: 2rem;
+    }
+
+    .sobre h1 {
+        font-size: 1.7rem;
+        /* border: 1px solid yellow; */
+    }
+
+    .foto .prog-img {
+        margin-top: 0rem;
+        text-align: center;
+        /* border: 1px solid blueviolet; */
+    }
+
+    .foto img {
+        width: 12%;
+        margin: 0 -3px -7px -3px;
+        /* border: 1px solid red; */
+    }
+
+}
+
+@media(max-width: 432px) {
+    .header-nav {
+        padding: 0;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .git img {
+        margin: 0rem 0.2rem;
+    }
+
+    .git p {
+        margin: 0rem 0.3rem;
+    }
+
+    main article {
+        padding: 1rem 0rem;
+    }
+
+    main article h2 {
+        font-size: 2rem;
+    }
+
+    .abertura {
+        padding: 3rem 7%;
+        /* border: 3px solid lightgreen; */
     }
 
     .servicos {
@@ -429,13 +462,13 @@ footer img {
     }
 
     main article ul {
-        font-size: 0.987rem;
+        font-size: 0.832rem;
         width: 80%;
         /* border: 1px solid salmon; */
     }
 
     main article h2 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .abertura {
@@ -444,7 +477,7 @@ footer img {
     }
 
     .sobre h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
         /* border: 1px solid yellow; */
     }
 
@@ -455,7 +488,7 @@ footer img {
     }
 
     .foto img {
-        width: 12%;
+        width: 10%;
         margin: 0 -3px -7px -3px;
         /* border: 1px solid red; */
     }
@@ -471,7 +504,7 @@ footer img {
         height: 15vh;
         padding: 1.5rem 0rem;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         /* border: 1px solid blueviolet; */
     }
 
@@ -668,9 +701,13 @@ footer img {
     }
 
     main article ul {
-        font-size: 1.161rem;
+        font-size: 0.982rem;
         width: 80%;
         /* border: 1px solid salmon; */
+    }
+
+    main article h2 {
+        font-size: 2.5rem;
     }
 
     .abertura {
@@ -678,9 +715,55 @@ footer img {
         /* border: 3px solid lightgreen; */
     }
 
+    .sobre h1 {
+        font-size: 2.5rem;
+        /* border: 1px solid yellow; */
+    }
+
+    .foto .prog-img {
+        margin-top: 0rem;
+        text-align: center;
+        /* border: 1px solid blueviolet; */
+    }
+
+    .foto img {
+        width: 10%;
+        margin: 0 -3px -7px -3px;
+        /* border: 1px solid red; */
+    }
+
     .servicos {
         padding: 3rem 7%;
         /* border: 3px solid green; */
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 15vh;
+        padding: 1.5rem 0rem;
+        align-items: center;
+        font-size: 1.5rem;
+        /* border: 1px solid blueviolet; */
+    }
+
+    footer article {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid cyan; */
+    }
+
+    footer span {
+        font-size: 1.2rem;
+        margin-left: 0.35rem;
+    }
+
+    footer img {
+        width: 2rem;
     }
 
 }
