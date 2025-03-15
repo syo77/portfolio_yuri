@@ -768,6 +768,14 @@ footer img {
 
 }
 
+@media (min-width: 1441px) and (max-width: 2000px) {
+    .abertura .foto_principal img {
+        max-width: 12.99rem; /* 13 NÃO */
+        margin-bottom: 2rem;
+        border: 5px solid blueviolet;
+    }
+}
+
 /* Para navegadores baseados em WebKit (Chrome, Edge, Safari, Opera) */
 ::-webkit-scrollbar {
     width: 12px; /* Largura da barra de rolagem vertical */
